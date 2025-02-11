@@ -1,120 +1,112 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人博客</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            display: flex;
-            flex-direction: row;
-            margin: 20px;
-        }
-        .main-content {
-            flex: 3;
-            background-color: white;
-            padding: 20px;
-            margin-right: 20px;
-        }
-        .sidebar {
-            flex: 1;
-            background-color: white;
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        article {
-            margin-bottom: 30px;
-        }
-        article h2 {
-            font-size: 1.8em;
-            margin: 0;
-        }
-        article p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XUYI's Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      margin: 30px 0;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+    header h1 {
+      font-size: 2em;
+      margin: 10px 0;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #555;
+    }
+    .social-links {
+      margin-top: 20px;
+    }
+    .social-links a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 10px;
+    }
+    .social-links a:hover {
+      color: #007bff;
+    }
+    .news-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .news-section h2 {
+      font-size: 1.6em;
+      margin-bottom: 20px;
+    }
+    .news-item {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+    .news-item p {
+      color: #555;
+      margin: 5px 0;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <img src="1.jpg" alt="XUYI">
+    <h1>XU YI</h1>
+   
+    <p>He is currently pursuing a Ph.D. degree at the Big Data Institute, </p>
+    <p> Central South University. His current research interests include mobile </p>
+    <p>computing, data generation, and few-shot learning.</p>
 
-<header>
-    <h1>欢迎来到我的博客</h1>
-    <p>分享我的思想与生活</p>
-</header>
-
-<nav>
-    <a href="#">首页</a>
-    <a href="#">关于我</a>
-    <a href="#">分类</a>
-    <a href="#">联系我</a>
-</nav>
-
-<div class="content">
-    <div class="main-content">
-        <article>
-            <h2>博客文章标题 1</h2>
-            <p>这是博客文章的简介部分。这里可以写一些引人入胜的内容，来吸引读者继续阅读。</p>
-            <p>更多的详细内容，文章正文部分可以在这里展现。这是一个模板，你可以根据实际内容进行修改。</p>
-        </article>
-
-        <article>
-            <h2>博客文章标题 2</h2>
-            <p>这是另一篇博客文章的简介。你可以使用类似的方法来展示你的个人观点或技术分享。</p>
-        </article>
+    
+    <div class="social-links">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">ResearchGate</a>
+      <a href="#">Email</a>
     </div>
-
-    <div class="sidebar">
-        <h3>关于我</h3>
-        <p>这里可以放置一些关于你的介绍内容，比如你是谁，做什么的，喜欢什么，为什么写博客等。</p>
-        <h3>标签云</h3>
-        <ul>
-            <li><a href="#">技术</a></li>
-            <li><a href="#">生活</a></li>
-            <li><a href="#">分享</a></li>
-            <li><a href="#">心得</a></li>
-        </ul>
+  </header>
+<!-- 
+  <div class="news-section">
+    <h2>News</h2>
+    <div class="news-item">
+      <h3>10/14/2024</h3>
+      <p><strong>MedDet</strong> has been accepted for an oral presentation at BIBM 2024!</p>
     </div>
-</div>
-
-<footer>
-    <p>© 2025 个人博客. 版权所有.</p>
-</footer>
+    <div class="news-item">
+      <h3>07/19/2024</h3>
+      <p><strong>Motion Avatar</strong> has been accepted to BMVC 2024!</p>
+    </div>
+    <div class="news-item">
+      <h3>07/02/2024</h3>
+      <p><strong>Motion Mamba</strong> has been accepted to ECCV 2024!</p>
+    </div>
+    <div class="news-item">
+      <h3>06/18/2024</h3>
+      <p><strong>JointViT</strong> has been selected as an oral presentation at MIUA 2024!</p>
+    </div>
+    <div class="news-item">
+      <h3>05/14/2024</h3>
+      <p><strong>JointViT</strong> has been accepted to MIUA 2024!</p>
+    </div>
+    <div class="news-item">
+      <h3>03/13/2024</h3>
+      <p><strong>Motion Mamba</strong> has been featured in Daily Papers!</p>
+    </div>
+    <div class="news-item">
+      <h3>02/10/2024</h3>
+      <p><strong>SegReg</strong> has been accepted to ISBI 2024!</p>
+    </div>
+  </div> -->
 
 </body>
 </html>
